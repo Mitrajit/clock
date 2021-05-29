@@ -5,34 +5,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <title>Clock</title>
-    <style>
-        .scroll {
-            overflow-y: scroll;
-        }
 
-        .scroll::-webkit-scrollbar {
-            width: 3px;
-        }
-
-        .scroll::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 6px rgba(247, 234, 234, 0.767);
-            border-radius: 10px;
-        }
-
-        .scroll::-webkit-scrollbar-thumb {
-            border-radius: 10px;
-            box-shadow: inset 0 0 6px rgba(39, 38, 38, 0.555);
-        }
-    </style>
 </head>
 
 <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Clock</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -509,15 +492,15 @@
             </div>
         </div>
     </nav>
-
-    <div class="container m-auto my-2 bg-light bg-gradient border border-2 rounded" style="width: 52%;" id="Time">
+<div class="container">
+    <div class="card m-auto   bg-gradient border border-2 rounded" style="width: 79%;" id="Time">
         <h1 class="display-4">Time is <span class="display-6" id="timeanddate"></span></h1>
         <p class="text-secondary">World Time. Trying to learn Bootstrap</p>
         <!-- <a class="btn btn-primary mb-3" href="#" role="button">Browse Times</a> -->
     </div>
 
-    <div class="container m-auto my-2 bg-light bg-gradient border border-2 rounded visually-hidden"
-        id="Alarm" style="width: 52%;">
+    <div class="card m-auto  bg-light bg-gradient border border-2 rounded visually-hidden"
+        id="Alarm" style="width: 79%;">
         <div class="display-4 d-flex">Alarm&nbsp;<div class="display-6 p-1 mt-auto" id="alarm_time">
             <time class="display-6 visually-hidden">00:00 AM</time>
             <input type="time" class="display-6 bg-light border-0" aria-label="Time input">
@@ -568,6 +551,8 @@
         <tbody id="laps">
         </tbody>
     </table>
+
+</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

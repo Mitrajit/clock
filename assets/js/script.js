@@ -24,6 +24,7 @@ function tick(){
     document.getElementById("timeanddate").innerHTML = time.format('hh:mm:ss A')
      + "<br><h1 class=\"display-6 align-text-top\">" + time.format('dddd, MMM DD,YYYY')
      + "</h1><h5>" + timezone + "</h5>"
+    document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?"+ timezone +"')";
     document.getElementById("Alarm").getElementsByTagName("h4")[0].innerText = "Current time "+time.format('hh:mm:ss A');
     if(document.getElementById("initiatealarm").innerText=="Reset"){
         let thespan = document.getElementById("alarm_time");
